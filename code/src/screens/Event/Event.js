@@ -224,7 +224,7 @@ const Title = ({ title, hasCoverImage }) => {
                textAlign="center"
                color={textColor}
           >
-               {title}
+               {decodeHTML(title)}
           </Heading>
      );
 };
@@ -443,7 +443,7 @@ const AddToCalendar = ({ start, end, location, event }) => {
                <Pressable py="3" onPress={() => handleAddToCalendar()}>
                     <HStack space="1" alignItems="center" justifyContent="space-between">
                          <HStack space="3" alignItems="center">
-                              <Icon as={MaterialIcons} name="calendar-today" size="5" />
+                              <Icon as={MaterialIcons} name="calendar-today" size="md" />
                               <VStack>
                                    <Text bold>{displayDay}</Text>
                                    <Text>
@@ -451,7 +451,7 @@ const AddToCalendar = ({ start, end, location, event }) => {
                                    </Text>
                               </VStack>
                          </HStack>
-                         <Icon as={MaterialIcons} name="chevron-right" size="7" />
+                         <Icon as={MaterialIcons} name="chevron-right" size="xl" />
                     </HStack>
                </Pressable>
                <Modal isOpen={showModal} onClose={() => setShowModal(false)} closeOnOverlayClick={false} size="md">
