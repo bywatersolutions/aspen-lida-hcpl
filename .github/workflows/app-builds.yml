@@ -257,4 +257,4 @@ jobs:
 #          SLACK_WEBHOOK: ${{ env.SLACK_WEBHOOK }}
           SLACK_COLOR: ${{ job.status == 'success' && 'good' || 'danger' }}
           SLACK_TITLE: 'Build Results for ${{ github.repository }}'
-          SLACK_MESSAGE: 'Build ${{ job.status == "success" && "completed successfully ✅" || "failed ❌" }}'
+          SLACK_MESSAGE: ${{ job.status == 'success' && 'Build completed successfully ✅' || 'Build failed ❌' }}
