@@ -1,0 +1,15 @@
+{
+  "name": "Hernando County Public Library",
+  "slug": "hcpl",
+  "easId": "2c486add-6703-454a-a46a-2c6a6393224f",
+  "reverseDns": "org.aspendiscovery.hcpl",
+  "discoveryUrl": "https://catalog.hcpl.bywatersolutions.com/",
+  "greenhouseUrl": "https://catalog.hcpl.bywatersolutions.com/",
+  "libraryId": "2",
+  "themeId": "1",
+  "background": "#ffffff",
+  "sentryProject": "aspen-lida-hcpl",
+  "sentryDsn": "https://5c27ae7f917c4ce3b371c98a9651c189@o994439.ingest.sentry.io/4504759347249152",
+  "ascAppId": "6446959364",
+  "logLevel": "0"
+}
